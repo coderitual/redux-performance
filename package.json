@@ -1,0 +1,40 @@
+{
+  "name": "redux-performance",
+  "version": "1.0.0",
+  "description": "Redux performance analysis",
+  "main": "dist/index",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderitual/redux-performance.git"
+  },
+  "keywords": [
+    "redux",
+    "react",
+    "typescript",
+    "performance",
+    "debug",
+    "dev-tools"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderitual/redux-performance/issues"
+  },
+  "homepage": "https://github.com/coderitual/redux-performance#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.1.2",
+    "source-map-loader": "^0.2.0",
+    "typescript": "^2.2.1",
+    "webpack": "^2.3.2"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0"
+  }
+}
