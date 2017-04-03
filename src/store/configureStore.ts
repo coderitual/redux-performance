@@ -3,6 +3,7 @@ import { spawn } from 'redux-saga/effects';
 import { fromJS } from 'immutable';
 import { createStore, compose, applyMiddleware } from 'redux';
 import { combineReducers } from 'redux-immutable';
+import reducer from '../reducer';
 
 const DEBUG = process.env.NODE_ENV !== 'production';
 
@@ -15,7 +16,7 @@ export default function configureStore() {
     applyMiddleware(sagaMiddleware),
     (DEBUG && (<any>window).devToolsExtension) ? (<any>window).devToolsExtension() : f => f
   );
-  const store = createStore(null, initialState, enhancer);
+  const store = createStore(reducer , initialState, enhancer);
   sagaMiddleware.run(rootSaga);
   return store;
 }
