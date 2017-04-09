@@ -8,7 +8,7 @@ const store = configureStore();
 
 render(
   <Provider store={store}>
-    <App compiler="Test" framework="React" />
+    <App compiler="TypeScript" framework="React" />
   </Provider>,
   document.getElementById("example")
 );
